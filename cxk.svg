@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <radialGradient id="basketball" cx="50%" cy="100%" r="80%" fx="50%" fy="70%">
+            <stop offset="0%" stop-color="#c47055"/>
+            <stop offset="20%" stop-color="#d3704b"/>
+            <stop offset="100%" stop-color="#e7967e"/>
+        </radialGradient>
+        <radialGradient id="head" cx="50%" cy="100%" r="100%" fx="50%" fy="70%">
+            <stop offset="0%" stop-color="#f1cac5"/>
+            <stop offset="75%" stop-color="#ecdadc"/>
+            <stop offset="75%" stop-color="#68686a"/>
+            <stop offset="100%" stop-color="#68686a"/>
+        </radialGradient>
+        <radialGradient id="left-foot" cx="70%" cy="90%" r="100%" fx="70%" fy="70%">
+            <stop offset="0%" stop-color="#6a6778"/>
+            <stop offset="15%" stop-color="#322736"/>
+        </radialGradient>
+        <radialGradient id="right-foot" cx="70%" cy="90%" r="100%" fx="70%" fy="70%">
+            <stop offset="0%" stop-color="#6a6778"/>
+            <stop offset="15%" stop-color="#322736"/>
+        </radialGradient>
+        <linearGradient id="body" x1="0" y1="0" x2="0" y2="100%">
+            <stop offset="0%" stop-color="#232436"/>
+            <stop offset="100%" stop-color="#1a141e"/>
+        </linearGradient>
+        <linearGradient id="leg" x1="0" y1="30%" x2="0" y2="100%">
+            <stop offset="0%" stop-color="#8f8993"/>
+            <stop offset="100%" stop-color="#685557"/>
+        </linearGradient>
+    </defs>
+
+    <!--头-->
+    <ellipse rx="18" ry="20" cx="130" cy="30" fill="url(#head)"/>
+    <!--身体和手臂-->
+    <polygon
+            points="100,53 67,70 30,70 28,85 70,88 103,73 115,120 175,118 164,67 188,78 215,99 225,88 197,63 160,47"
+            fill="url(#body)"/>
+    <!--肩带-->
+    <line x1="110" y1="52" x2="125" y2="120" stroke="#fff" stroke-width="5"/>
+    <line x1="149" y1="48" x2="160" y2="119" stroke="#fff" stroke-width="5"/>
+    <!--腿-->
+    <polygon points="175,118 163,195 175,230 160,235 140,200 140,155 112,200 133,250 118,258 85,199 115,120"
+             fill="url(#leg)"/>
+    <!--脚-->
+    <path d="M 175 230 C 205 285 170 298 160 235" fill="url(#left-foot)"/>
+    <path d="M 133 250 C 150 300 105 305 118 258" fill="url(#right-foot)"/>
+    <!--球-->
+    <circle r="20" cx="40" cy="90" fill="url(#basketball)"/>
+    <!--手-->
+    <polygon points="30,70 20,73 20,95 33,75" fill="#eacbeb"/>
+    <polygon points="225,88 234,92 234,104 223,109 215,99" fill="#eacbeb"/>
+</svg>
